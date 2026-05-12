@@ -1,0 +1,619 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/basakkocan/VGCO/ontology/vgco#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/basakkocan/VGCO/ontology/vgco#">
+    <Prefix name="" IRI="https://github.com/basakkocan/VGCO/ontology/vgco/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Developer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#GameSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Media"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ReviewMetric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ReviewScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Screenshot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Tag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Trailer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#availableOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#developedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasReviewScore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasScreenshot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTag"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTrailer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#partOfSeries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#publishedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#soldOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#coverImageUrl"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#mediaUrl"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#metacriticScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#officialWebsite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#playtimeHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#ratingsCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#rawgId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#releaseDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#scoreValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#slug"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#ActionRPG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#Adventure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BandaiNamco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#FromSoftware"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#LarianPublisher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#LarianStudios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#Mature17Plus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#OpenWorld"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PlayStation5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PlayStationStore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#RPG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#SoulsLike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#SoulsSeries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#Steam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#XboxSeriesX"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Developer"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Publisher"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ReviewScore"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ReviewMetric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Screenshot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Trailer"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#availableOn"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasGenre"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Genre"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTag"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Tag"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#publishedBy"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Publisher"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#soldOn"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Store"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#developedBy"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Developer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Genre"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#ActionRPG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Genre"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#Adventure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Publisher"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BandaiNamco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Developer"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#FromSoftware"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Publisher"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#LarianPublisher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Developer"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#LarianStudios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#Mature17Plus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Tag"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#OpenWorld"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Platform"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Platform"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PlayStation5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Store"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PlayStationStore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Genre"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#RPG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Tag"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#SoulsLike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#GameSeries"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#SoulsSeries"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Store"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#Steam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Platform"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#XboxSeriesX"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#availableOn"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#availableOn"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PlayStation5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#developedBy"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#LarianStudios"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasGenre"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#RPG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#publishedBy"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#LarianPublisher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#availableOn"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#availableOn"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#PlayStation5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#developedBy"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#FromSoftware"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#Mature17Plus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasGenre"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#ActionRPG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTag"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#OpenWorld"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTag"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#SoulsLike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#partOfSeries"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#SoulsSeries"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#publishedBy"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BandaiNamco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#soldOn"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#Steam"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#rating"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#title"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3"/>
+        <Literal>Baldur&apos;s Gate 3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#rating"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#title"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/BFO_0000030#EldenRing"/>
+        <Literal>Elden Ring</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#availableOn"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#developedBy"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasGenre"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasReviewScore"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasScreenshot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTag"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTrailer"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#partOfSeries"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#publishedBy"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#soldOn"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#availableOn"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Platform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#developedBy"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Developer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasGenre"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasReviewScore"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ReviewScore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasScreenshot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Screenshot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTag"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Tag"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#hasTrailer"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Trailer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#partOfSeries"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#GameSeries"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#publishedBy"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Publisher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#soldOn"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Store"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#coverImageUrl"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#description"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#mediaUrl"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#metacriticScore"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#officialWebsite"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#playtimeHours"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#rating"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#ratingsCount"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#rawgId"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#releaseDate"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#scoreValue"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#ReviewScore"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#slug"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#title"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030#VideoGame"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#coverImageUrl"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#mediaUrl"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#metacriticScore"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#officialWebsite"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#playtimeHours"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#rating"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#ratingsCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#rawgId"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#releaseDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#scoreValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#slug"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/BFO_0000030#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
