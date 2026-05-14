@@ -23,7 +23,6 @@ VGCO is an OWL ontology and knowledge graph for modeling video games and their m
 ## Repository Structure
 
 * ontology/: ontology source files
-* docs/: project specification and ORSD
 * queries/: SPARQL competency queries
 * validation/: SHACL constraints
 * examples/: sample RDF data
