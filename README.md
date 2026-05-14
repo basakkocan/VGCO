@@ -32,4 +32,5 @@ VGCO is an OWL ontology and knowledge graph for modeling video games and their m
 * Başak Koçan
 * Utku Emre Doğanbaş
 * Gürkan İsmet Arslan
+* Tarık Aydın
 
