@@ -1,0 +1,41 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (6):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Every VideoGame must have at least one developer.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path bfo:developedBy ]
+	Focus Node: bfo:diablo_iii_eternal_collection
+	Result Path: bfo:developedBy
+	Message: Every VideoGame must have at least one developer.
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Every VideoGame must have at least one developer.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path bfo:developedBy ]
+	Focus Node: bfo:overwatch
+	Result Path: bfo:developedBy
+	Message: Every VideoGame must have at least one developer.
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Every VideoGame must have at least one developer.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path bfo:developedBy ]
+	Focus Node: bfo:prodeus
+	Result Path: bfo:developedBy
+	Message: Every VideoGame must have at least one developer.
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Every VideoGame must have at least one developer.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path bfo:developedBy ]
+	Focus Node: bfo:super_mario_maker_2
+	Result Path: bfo:developedBy
+	Message: Every VideoGame must have at least one developer.
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Every VideoGame must have at least one developer.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path bfo:developedBy ]
+	Focus Node: bfo:the_legend_of_zelda_majoras_mask_3d
+	Result Path: bfo:developedBy
+	Message: Every VideoGame must have at least one developer.
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Every VideoGame must have at least one developer.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path bfo:developedBy ]
+	Focus Node: bfo:xenoblade_chronicles_definitive_edition
+	Result Path: bfo:developedBy
+	Message: Every VideoGame must have at least one developer.

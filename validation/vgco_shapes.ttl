@@ -1,0 +1,59 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix bfo:  <http://purl.obolibrary.org/obo/BFO_0000030#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bfo:VideoGameShape
+    a sh:NodeShape ;
+    sh:targetClass bfo:VideoGame ;
+    rdfs:label "VideoGame Validation Shape" ;
+
+    sh:property [
+        sh:path bfo:title ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Every VideoGame must have exactly one title."
+    ] ;
+
+    sh:property [
+        sh:path bfo:hasGenre ;
+        sh:minCount 1 ;
+        sh:message "Every VideoGame must have at least one genre."
+    ] ;
+
+    sh:property [
+        sh:path bfo:availableOn ;
+        sh:minCount 1 ;
+        sh:message "Every VideoGame must be available on at least one platform."
+    ] ;
+
+    sh:property [
+        sh:path bfo:developedBy ;
+        sh:minCount 1 ;
+        sh:message "Every VideoGame must have at least one developer."
+    ] ;
+
+    sh:property [
+        sh:path bfo:metacriticScore ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 100 ;
+        sh:message "Metacritic score must be between 0 and 100."
+    ] ;
+
+    sh:property [
+        sh:path bfo:rating ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 5 ;
+        sh:message "User rating must be between 0 and 5."
+    ] ;
+
+    sh:property [
+        sh:path bfo:rawgId ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Every VideoGame must have exactly one RAWG ID."
+    ] .
