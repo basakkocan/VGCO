@@ -1,0 +1,153 @@
+# ============================================
+# 500 Game Images
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT ?title ?coverImage WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:title ?title ;
+        bfo:coverImageUrl ?coverImage .
+}
+ORDER BY ?title
+
+# ============================================
+# Add statements
+# ============================================
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+INSERT DATA
+      {
+      GRAPH <http://example> {
+          <http://example/book1> dc:title "A new book" ;
+                                 dc:creator "A.N.Other" .
+          }
+      }
+
+# ============================================
+# All The Games
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT ?title ?score ?rating ?releaseDate WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:title ?title .
+  OPTIONAL { ?game bfo:metacriticScore ?score . }
+  OPTIONAL { ?game bfo:rating ?rating . }
+  OPTIONAL { ?game bfo:releaseDate ?releaseDate . }
+}
+ORDER BY DESC(?score)
+
+# ============================================
+# Clear graph
+# ============================================
+CLEAR GRAPH <http://example>
+
+# ============================================
+# Distict Dev
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT (COUNT(DISTINCT ?game) AS ?gameCount) WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:developedBy ?dev .
+}
+
+# ============================================
+# Genres
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT ?genre (COUNT(?game) AS ?count) WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:hasGenre ?genre .
+}
+GROUP BY ?genre
+ORDER BY DESC(?count)
+LIMIT 10
+
+# ============================================
+# Metacritic 90+ Games
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT ?game ?title ?score WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:title ?title ;
+        bfo:metacriticScore ?score .
+  FILTER(?score > 90)
+}
+ORDER BY DESC(?score)
+LIMIT 10
+
+# ============================================
+# open world high ranked
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT ?title ?score WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:title ?title ;
+        bfo:hasTag bfo:Open_World ;
+        bfo:metacriticScore ?score .
+}
+ORDER BY DESC(?score)
+LIMIT 10
+
+# ============================================
+# pc and ps4
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT ?title ?score WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:title ?title ;
+        bfo:availableOn bfo:Pc ;
+        bfo:availableOn bfo:Playstation4 ;
+        bfo:metacriticScore ?score .
+}
+ORDER BY DESC(?score)
+LIMIT 10
+
+# ============================================
+# Platforms
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT ?platform (COUNT(?game) AS ?count) WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:availableOn ?platform .
+}
+GROUP BY ?platform
+ORDER BY DESC(?count)
+LIMIT 10
+
+# ============================================
+# Remove statements
+# ============================================
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+DELETE DATA
+{
+GRAPH <http://example> {
+    <http://example/book1> dc:title "A new book" ;
+                           dc:creator "A.N.Other" .
+    }
+}
+
+# ============================================
+# SPARQL Select template
+# ============================================
+SELECT ?s ?p ?o
+WHERE {
+	?s ?p ?o .
+} LIMIT 100
+
+# ============================================
+# Unkown Dev
+# ============================================
+PREFIX bfo: <http://purl.obolibrary.org/obo/BFO_0000030#>
+
+SELECT ?title WHERE {
+  ?game a bfo:VideoGame ;
+        bfo:title ?title .
+  FILTER NOT EXISTS { ?game bfo:developedBy ?dev . }
+}
+
