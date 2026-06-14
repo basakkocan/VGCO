@@ -1,0 +1,6 @@
+rdflib>=7.0.0
+pyshacl>=0.25.0
+google-genai>=2.6.0
+python-dotenv>=1.0.0
+fastapi>=0.110.0
+uvicorn>=0.28.0
