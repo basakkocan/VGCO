@@ -1,0 +1,495 @@
+@prefix : <https://github.com/basakkocan/VGCO/ontology/vgco#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://github.com/basakkocan/VGCO/ontology/vgco#> .
+
+<https://github.com/basakkocan/VGCO/ontology/vgco#> rdf:type owl:Ontology ;
+                                                     <http://purl.org/dc/terms/abstract> "The Video Game Catalog Ontology (VGCO) provides a structured knowledge model for describing and querying video games and their associated metadata. The knowledge graph is populated using the RAWG Video Games Database API, capturing key entities such as titles, release dates, metacritic scores, and media assets. By utilizing BFO-based namespaces, the ontology ensures interoperability with broader scientific and entertainment knowledge models."@en ;
+                                                     <http://purl.org/dc/terms/creator> "Başak Koçan"@en ,
+                                                                                        "Gürkan İsmet Arslan"@en ,
+                                                                                        "Tarık Aydın"@en ,
+                                                                                        "Utku Emre Doğanbaş"@en ;
+                                                     <http://purl.org/dc/terms/description> "The focus of the ontology is the VideoGame as a central entity and its direct metadata relationships. The ontology captures essential information about games, including their genres, platforms, developers, publishers, and media assets. This structured model enables complex querying based on criteria such as review scores, Metacritic ratings, or franchise membership, bridging the gap between high-level conceptual schemas and large-scale instance data."@en ;
+                                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                     <http://purl.org/dc/terms/title> "Video Game Catalog Ontology (VGCO)"@en ;
+                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "vgco" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://github.com/basakkocan/VGCO/ontology/vgco/" ;
+                                                     owl:versionInfo "1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#availableOn
+<http://purl.obolibrary.org/obo/BFO_0000030#availableOn> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                         rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#Platform> ;
+                                                         rdfs:comment "Relates a video game to the hardware console, operating system, or environment platform on which it can be executed and played."@en ;
+                                                         rdfs:label "available on"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#developedBy
+<http://purl.obolibrary.org/obo/BFO_0000030#developedBy> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                         rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#Developer> ;
+                                                         rdfs:comment "Relates a video game to the developer organization or software studio responsible for its creation and coding."@en ;
+                                                         rdfs:label "developed by"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating
+<http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                           rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating> ;
+                                                           rdfs:comment "Associates a video game with its official content and age suitability rating assigned by the Entertainment Software Rating Board."@en ;
+                                                           rdfs:label "has ESRB rating"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#hasGenre
+<http://purl.obolibrary.org/obo/BFO_0000030#hasGenre> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                      rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#Genre> ;
+                                                      rdfs:comment "Associates a video game with a specific gameplay genre classification describing its interaction mechanics."@en ;
+                                                      rdfs:label "has genre"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#hasReviewScore
+<http://purl.obolibrary.org/obo/BFO_0000030#hasReviewScore> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#ReviewScore> ;
+                                                            rdfs:comment "Links a video game to a specific review score evaluation awarded by critical outlets or user aggregations."@en ;
+                                                            rdfs:label "has review score"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#hasScreenshot
+<http://purl.obolibrary.org/obo/BFO_0000030#hasScreenshot> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                           rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#Screenshot> ;
+                                                           rdfs:comment "Associates a video game with a static image capturing visual gameplay during operation."@en ;
+                                                           rdfs:label "has screenshot"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#hasTag
+<http://purl.obolibrary.org/obo/BFO_0000030#hasTag> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                    rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#Tag> ;
+                                                    rdfs:comment "Associates a video game with a descriptive keyword, feature label, or community classification tag."@en ;
+                                                    rdfs:label "has tag"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#hasTrailer
+<http://purl.obolibrary.org/obo/BFO_0000030#hasTrailer> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                        rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#Trailer> ;
+                                                        rdfs:comment "Associates a video game with a promotional video asset showcasing gameplay or cinematic announcements."@en ;
+                                                        rdfs:label "has trailer"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#partOfSeries
+<http://purl.obolibrary.org/obo/BFO_0000030#partOfSeries> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                          rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#GameSeries> ;
+                                                          rdfs:comment "Relates an individual video game entity to a broader sequence, franchise, or game series."@en ;
+                                                          rdfs:label "part of series"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#publishedBy
+<http://purl.obolibrary.org/obo/BFO_0000030#publishedBy> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                         rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#Publisher> ;
+                                                         rdfs:comment "Relates a video game to the publishing organization responsible for its funding, marketing, and distribution."@en ;
+                                                         rdfs:label "published by"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#soldOn
+<http://purl.obolibrary.org/obo/BFO_0000030#soldOn> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                    rdfs:range <http://purl.obolibrary.org/obo/BFO_0000030#Store> ;
+                                                    rdfs:comment "Links a video game to a specific digital storefront or retail platform where it is commercialized."@en ;
+                                                    rdfs:label "sold on"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#coverImageUrl
+<http://purl.obolibrary.org/obo/BFO_0000030#coverImageUrl> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                           rdfs:range xsd:anyURI ;
+                                                           rdfs:comment "The uniform resource locator pointing to the official box art or primary cover image asset of a video game."@en ;
+                                                           rdfs:label "cover image URL"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#description
+<http://purl.obolibrary.org/obo/BFO_0000030#description> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "A detailed textual summary providing an overview of the narrative, scope, and key features of a video game."@en ;
+                                                         rdfs:label "description"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#mediaUrl
+<http://purl.obolibrary.org/obo/BFO_0000030#mediaUrl> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#Media> ;
+                                                      rdfs:range xsd:anyURI ;
+                                                      rdfs:comment "The uniform resource locator directly resolving to a specific digital media asset file."@en ;
+                                                      rdfs:label "media URL"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#metacriticScore
+<http://purl.obolibrary.org/obo/BFO_0000030#metacriticScore> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                             rdfs:range xsd:integer ;
+                                                             rdfs:comment "The aggregated critical review score calculated by Metacritic, expressed as an integer value up to 100."@en ;
+                                                             rdfs:label "metacritic score"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#officialWebsite
+<http://purl.obolibrary.org/obo/BFO_0000030#officialWebsite> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                             rdfs:range xsd:anyURI ;
+                                                             rdfs:comment "The primary authoritative web page maintained for a video game."@en ;
+                                                             rdfs:label "official website"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#playtimeHours
+<http://purl.obolibrary.org/obo/BFO_0000030#playtimeHours> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                           rdfs:range xsd:integer ;
+                                                           rdfs:comment "The estimated or average accumulated duration required to complete a video game, recorded in hours."@en ;
+                                                           rdfs:label "playtime hours"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#rating
+<http://purl.obolibrary.org/obo/BFO_0000030#rating> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                    rdfs:range xsd:decimal ;
+                                                    rdfs:comment "The average user or critical evaluation metric assigned directly to a video game."@en ;
+                                                    rdfs:label "rating"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#ratingsCount
+<http://purl.obolibrary.org/obo/BFO_0000030#ratingsCount> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                          rdfs:range xsd:integer ;
+                                                          rdfs:comment "The total aggregated quantity of distinct user or critic ratings contributed for a video game."@en ;
+                                                          rdfs:label "ratings count"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#rawgId
+<http://purl.obolibrary.org/obo/BFO_0000030#rawgId> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                    rdfs:range xsd:integer ;
+                                                    rdfs:comment "The unique external numerical identifier assigned to a video game record within the RAWG database API."@en ;
+                                                    rdfs:label "RAWG ID"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#releaseDate
+<http://purl.obolibrary.org/obo/BFO_0000030#releaseDate> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                         rdfs:range xsd:dateTime ;
+                                                         rdfs:comment "The official initial date and timestamp defining when a video game was released publicly."@en ;
+                                                         rdfs:label "release date"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#scoreValue
+<http://purl.obolibrary.org/obo/BFO_0000030#scoreValue> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#ReviewScore> ;
+                                                        rdfs:range xsd:decimal ;
+                                                        rdfs:comment "The distinct quantitative numeric decimal value associated with a review score instance."@en ;
+                                                        rdfs:label "score value"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#slug
+<http://purl.obolibrary.org/obo/BFO_0000030#slug> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:comment "A standardized, URL-friendly lowercase string acting as a unique key for a video game."@en ;
+                                                  rdfs:label "slug"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#title
+<http://purl.obolibrary.org/obo/BFO_0000030#title> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                   rdfs:range xsd:string ;
+                                                   rdfs:comment "The primary proper string name officially identifying a video game."@en ;
+                                                   rdfs:label "title"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Developer
+<http://purl.obolibrary.org/obo/BFO_0000030#Developer> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030#Organization> ;
+                                                       rdfs:comment "An organization or software studio responsible for the technical implementation, design, and internal development of a video game."@en ;
+                                                       rdfs:label "Developer"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating
+<http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating> rdf:type owl:Class ;
+                                                        rdfs:comment "A standardized regulatory evaluation category assigned by the Entertainment Software Rating Board indicating content suitability and age boundaries."@en ;
+                                                        rdfs:label "ESRB Rating"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#GameSeries
+<http://purl.obolibrary.org/obo/BFO_0000030#GameSeries> rdf:type owl:Class ;
+                                                        rdfs:comment "A formally recognized sequence, collection, or overarching franchise of video games connected through narrative, characters, or branding."@en ;
+                                                        rdfs:label "Game Series"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Genre
+<http://purl.obolibrary.org/obo/BFO_0000030#Genre> rdf:type owl:Class ;
+                                                   rdfs:comment "A structural taxonomy category categorizing video games primarily by their underlying mechanical gameplay interactions."@en ;
+                                                   rdfs:label "Genre"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Media
+<http://purl.obolibrary.org/obo/BFO_0000030#Media> rdf:type owl:Class ;
+                                                   rdfs:comment "Digital files and multimedia artifacts, such as promotional images or video recordings, depicting or associated with a video game."@en ;
+                                                   rdfs:label "Media"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Organization
+<http://purl.obolibrary.org/obo/BFO_0000030#Organization> rdf:type owl:Class ;
+                                                          rdfs:comment "A structured corporate entity, collective studio, or corporate enterprise operating within the video game ecosystem."@en ;
+                                                          rdfs:label "Organization"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Platform
+<http://purl.obolibrary.org/obo/BFO_0000030#Platform> rdf:type owl:Class ;
+                                                      rdfs:comment "A discrete computational environment, physical console infrastructure, or operating system capable of running video game software."@en ;
+                                                      rdfs:label "Platform"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Publisher
+<http://purl.obolibrary.org/obo/BFO_0000030#Publisher> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030#Organization> ;
+                                                       rdfs:comment "An entity responsible for commercialization activities, including public distribution, strategic marketing, and financial backing of a video game."@en ;
+                                                       rdfs:label "Publisher"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#ReviewMetric
+<http://purl.obolibrary.org/obo/BFO_0000030#ReviewMetric> rdf:type owl:Class ;
+                                                          rdfs:comment "An abstract measurement framework standardizing performance evaluations and critical scores assigned to a video game."@en ;
+                                                          rdfs:label "Review Metric"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#ReviewScore
+<http://purl.obolibrary.org/obo/BFO_0000030#ReviewScore> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030#ReviewMetric> ;
+                                                         rdfs:comment "A discrete quantitative scoring instance generated by a critic outlet or compiled through user review aggregations."@en ;
+                                                         rdfs:label "Review Score"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Screenshot
+<http://purl.obolibrary.org/obo/BFO_0000030#Screenshot> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030#Media> ;
+                                                        rdfs:comment "A static visual capture output recorded during the active software rendering state of a video game."@en ;
+                                                        rdfs:label "Screenshot"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Store
+<http://purl.obolibrary.org/obo/BFO_0000030#Store> rdf:type owl:Class ;
+                                                   rdfs:comment "A digital marketplace infrastructure or physical distribution platform transacting software licenses directly to consumers."@en ;
+                                                   rdfs:label "Store"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Tag
+<http://purl.obolibrary.org/obo/BFO_0000030#Tag> rdf:type owl:Class ;
+                                                 rdfs:comment "A metadata label denoting contextual themes, game mechanics, or granular user-defined search attributes."@en ;
+                                                 rdfs:label "Tag"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Trailer
+<http://purl.obolibrary.org/obo/BFO_0000030#Trailer> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030#Media> ;
+                                                     rdfs:comment "A promotional moving image recording distributed to highlight visual capabilities, gameplay loops, or thematic concepts."@en ;
+                                                     rdfs:label "Trailer"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#VideoGame
+<http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> rdf:type owl:Class ;
+                                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000030#availableOn> ;
+                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000030#Platform>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating> ;
+                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000030#hasGenre> ;
+                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000030#Genre>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000030#hasTag> ;
+                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000030#Tag>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000030#publishedBy> ;
+                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000030#Publisher>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000030#soldOn> ;
+                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000030#Store>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000030#developedBy> ;
+                                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                         owl:onClass <http://purl.obolibrary.org/obo/BFO_0000030#Developer>
+                                                                       ] ;
+                                                       rdfs:comment "An interactive software application engineered to process user inputs and render visual and audial output streams on computational hardware."@en ;
+                                                       rdfs:label "Video Game"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#ActionRPG
+<http://purl.obolibrary.org/obo/BFO_0000030#ActionRPG> rdf:type owl:NamedIndividual ,
+                                                                <http://purl.obolibrary.org/obo/BFO_0000030#Genre> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Adventure
+<http://purl.obolibrary.org/obo/BFO_0000030#Adventure> rdf:type owl:NamedIndividual ,
+                                                                <http://purl.obolibrary.org/obo/BFO_0000030#Genre> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3
+<http://purl.obolibrary.org/obo/BFO_0000030#BaldurGate3> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                         <http://purl.obolibrary.org/obo/BFO_0000030#availableOn> <http://purl.obolibrary.org/obo/BFO_0000030#PC> ,
+                                                                                                                  <http://purl.obolibrary.org/obo/BFO_0000030#PlayStation5> ;
+                                                         <http://purl.obolibrary.org/obo/BFO_0000030#developedBy> <http://purl.obolibrary.org/obo/BFO_0000030#LarianStudios> ;
+                                                         <http://purl.obolibrary.org/obo/BFO_0000030#hasGenre> <http://purl.obolibrary.org/obo/BFO_0000030#RPG> ;
+                                                         <http://purl.obolibrary.org/obo/BFO_0000030#publishedBy> <http://purl.obolibrary.org/obo/BFO_0000030#LarianPublisher> ;
+                                                         <http://purl.obolibrary.org/obo/BFO_0000030#rating> 9.8 ;
+                                                         <http://purl.obolibrary.org/obo/BFO_0000030#title> "Baldur's Gate 3" .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#BandaiNamco
+<http://purl.obolibrary.org/obo/BFO_0000030#BandaiNamco> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/BFO_0000030#Publisher> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#EldenRing
+<http://purl.obolibrary.org/obo/BFO_0000030#EldenRing> rdf:type owl:NamedIndividual ,
+                                                                <http://purl.obolibrary.org/obo/BFO_0000030#VideoGame> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#availableOn> <http://purl.obolibrary.org/obo/BFO_0000030#PC> ,
+                                                                                                                <http://purl.obolibrary.org/obo/BFO_0000030#PlayStation5> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#developedBy> <http://purl.obolibrary.org/obo/BFO_0000030#FromSoftware> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#hasESRBRating> <http://purl.obolibrary.org/obo/BFO_0000030#Mature17Plus> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#hasGenre> <http://purl.obolibrary.org/obo/BFO_0000030#ActionRPG> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#hasTag> <http://purl.obolibrary.org/obo/BFO_0000030#OpenWorld> ,
+                                                                                                           <http://purl.obolibrary.org/obo/BFO_0000030#SoulsLike> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#partOfSeries> <http://purl.obolibrary.org/obo/BFO_0000030#SoulsSeries> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#publishedBy> <http://purl.obolibrary.org/obo/BFO_0000030#BandaiNamco> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#soldOn> <http://purl.obolibrary.org/obo/BFO_0000030#Steam> ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#rating> 4.65 ;
+                                                       <http://purl.obolibrary.org/obo/BFO_0000030#title> "Elden Ring" .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#FromSoftware
+<http://purl.obolibrary.org/obo/BFO_0000030#FromSoftware> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/BFO_0000030#Developer> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#LarianPublisher
+<http://purl.obolibrary.org/obo/BFO_0000030#LarianPublisher> rdf:type owl:NamedIndividual ,
+                                                                      <http://purl.obolibrary.org/obo/BFO_0000030#Publisher> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#LarianStudios
+<http://purl.obolibrary.org/obo/BFO_0000030#LarianStudios> rdf:type owl:NamedIndividual ,
+                                                                    <http://purl.obolibrary.org/obo/BFO_0000030#Developer> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Mature17Plus
+<http://purl.obolibrary.org/obo/BFO_0000030#Mature17Plus> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/BFO_0000030#ESRBRating> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#OpenWorld
+<http://purl.obolibrary.org/obo/BFO_0000030#OpenWorld> rdf:type owl:NamedIndividual ,
+                                                                <http://purl.obolibrary.org/obo/BFO_0000030#Tag> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#PC
+<http://purl.obolibrary.org/obo/BFO_0000030#PC> rdf:type owl:NamedIndividual ,
+                                                         <http://purl.obolibrary.org/obo/BFO_0000030#Platform> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#PlayStation5
+<http://purl.obolibrary.org/obo/BFO_0000030#PlayStation5> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/BFO_0000030#Platform> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#PlayStationStore
+<http://purl.obolibrary.org/obo/BFO_0000030#PlayStationStore> rdf:type owl:NamedIndividual ,
+                                                                       <http://purl.obolibrary.org/obo/BFO_0000030#Store> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#RPG
+<http://purl.obolibrary.org/obo/BFO_0000030#RPG> rdf:type owl:NamedIndividual ,
+                                                          <http://purl.obolibrary.org/obo/BFO_0000030#Genre> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#SoulsLike
+<http://purl.obolibrary.org/obo/BFO_0000030#SoulsLike> rdf:type owl:NamedIndividual ,
+                                                                <http://purl.obolibrary.org/obo/BFO_0000030#Tag> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#SoulsSeries
+<http://purl.obolibrary.org/obo/BFO_0000030#SoulsSeries> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/BFO_0000030#GameSeries> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#Steam
+<http://purl.obolibrary.org/obo/BFO_0000030#Steam> rdf:type owl:NamedIndividual ,
+                                                            <http://purl.obolibrary.org/obo/BFO_0000030#Store> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030#XboxSeriesX
+<http://purl.obolibrary.org/obo/BFO_0000030#XboxSeriesX> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/BFO_0000030#Platform> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
