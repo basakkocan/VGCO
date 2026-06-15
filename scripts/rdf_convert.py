@@ -1,7 +1,6 @@
 import json, html, re
 from rdflib import Graph, Namespace, URIRef, Literal, RDF, RDFS, XSD
 
-# Ontology'nizin gerçek namespace'i
 BFO = Namespace("http://purl.obolibrary.org/obo/BFO_0000030#")
 VGCO = Namespace("https://github.com/basakkocan/VGCO/ontology/vgco/")
 
