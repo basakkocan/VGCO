@@ -988,7 +988,7 @@ The game features a heavily revised combat system that relies on hit-box mechani
     bfo:playtimeHours 28 ;
     bfo:publishedBy bfo:Ubisoft_Entertainment ;
     bfo:rating 3.96 ;
-    bfo:ratingsCount 2108 ;
+    bfo:ratingsCount 2109 ;
     bfo:rawgId 28153 ;
     bfo:releaseDate "2017-10-27T00:00:00"^^xsd:dateTime ;
     bfo:slug "assassins-creed-origins" ;
@@ -1056,7 +1056,7 @@ England in the age of the Vikings is a fractured nation of petty lords and warri
     bfo:playtimeHours 5 ;
     bfo:publishedBy bfo:Ubisoft_Entertainment ;
     bfo:rating 3.68 ;
-    bfo:ratingsCount 798 ;
+    bfo:ratingsCount 799 ;
     bfo:rawgId 437059 ;
     bfo:releaseDate "2020-11-10T00:00:00"^^xsd:dateTime ;
     bfo:slug "assassins-creed-valhalla" ;
@@ -1384,7 +1384,7 @@ The Forgotten Realms are a vast, detailed and diverse world, and there are secre
     bfo:playtimeHours 20 ;
     bfo:publishedBy bfo:Larian_Studios ;
     bfo:rating 4.45 ;
-    bfo:ratingsCount 1034 ;
+    bfo:ratingsCount 1036 ;
     bfo:rawgId 324997 ;
     bfo:releaseDate "2023-08-03T00:00:00"^^xsd:dateTime ;
     bfo:slug "baldurs-gate-3" ;
@@ -1523,8 +1523,8 @@ Fully integrated mod tools allow you to create and transform the game via Steam 
     bfo:officialWebsite "http://barotraumagame.com/"^^xsd:anyURI ;
     bfo:playtimeHours 4 ;
     bfo:publishedBy bfo:Fakefish ;
-    bfo:rating 3.79 ;
-    bfo:ratingsCount 195 ;
+    bfo:rating 3.77 ;
+    bfo:ratingsCount 196 ;
     bfo:rawgId 268446 ;
     bfo:releaseDate "2023-03-13T00:00:00"^^xsd:dateTime ;
     bfo:slug "barotrauma" ;
@@ -3398,7 +3398,7 @@ A distinct new feature in the sixth part is that city improvements are no more c
     bfo:publishedBy bfo:2K_Games,
         bfo:Aspyr ;
     bfo:rating 4.16 ;
-    bfo:ratingsCount 1431 ;
+    bfo:ratingsCount 1432 ;
     bfo:rawgId 10297 ;
     bfo:releaseDate "2016-10-20T00:00:00"^^xsd:dateTime ;
     bfo:slug "civilization-vi" ;
@@ -4351,7 +4351,7 @@ The new changes to the systems of multiplayer, crafting and combat will offer ne
         bfo:Bandai_Namco_Entertainment_Us,
         bfo:Fromsoftware ;
     bfo:rating 4.4 ;
-    bfo:ratingsCount 2783 ;
+    bfo:ratingsCount 2784 ;
     bfo:rawgId 2551 ;
     bfo:releaseDate "2016-04-11T00:00:00"^^xsd:dateTime ;
     bfo:slug "dark-souls-iii" ;
@@ -5072,7 +5072,7 @@ Destiny 2 has a strong RPG aspect that includes character customization and deve
     bfo:publishedBy bfo:Activision_Blizzard,
         bfo:Bungie ;
     bfo:rating 3.52 ;
-    bfo:ratingsCount 2668 ;
+    bfo:ratingsCount 2669 ;
     bfo:rawgId 32 ;
     bfo:releaseDate "2017-09-06T00:00:00"^^xsd:dateTime ;
     bfo:slug "destiny-2" ;
@@ -5721,7 +5721,7 @@ Disco Elysium’s completely original skill system makes your innermost feelings
     bfo:officialWebsite "http://zaumstudio.com/"^^xsd:anyURI ;
     bfo:playtimeHours 6 ;
     bfo:rating 4.37 ;
-    bfo:ratingsCount 1351 ;
+    bfo:ratingsCount 1352 ;
     bfo:rawgId 262382 ;
     bfo:releaseDate "2019-10-14T00:00:00"^^xsd:dateTime ;
     bfo:slug "disco-elysium" ;
@@ -6013,7 +6013,7 @@ Game Master Mode: Take your imagination to the next level and craft your own sto
     bfo:playtimeHours 22 ;
     bfo:publishedBy bfo:Larian_Studios ;
     bfo:rating 4.38 ;
-    bfo:ratingsCount 1676 ;
+    bfo:ratingsCount 1677 ;
     bfo:rawgId 10073 ;
     bfo:releaseDate "2017-09-14T00:00:00"^^xsd:dateTime ;
     bfo:slug "divinity-original-sin-2" ;
@@ -6247,7 +6247,7 @@ While heading to multiplayer, you will experience every single problem from a si
     bfo:playtimeHours 7 ;
     bfo:publishedBy bfo:Klei_Entertainment ;
     bfo:rating 3.77 ;
-    bfo:ratingsCount 1399 ;
+    bfo:ratingsCount 1400 ;
     bfo:rawgId 9882 ;
     bfo:releaseDate "2016-04-21T00:00:00"^^xsd:dateTime ;
     bfo:slug "dont-starve-together" ;
@@ -7319,7 +7319,7 @@ And now the guidance of grace will be brought to the Tarnished who were spurned 
     bfo:publishedBy bfo:Bandai_Namco_Entertainment,
         bfo:Fromsoftware ;
     bfo:rating 4.39 ;
-    bfo:ratingsCount 1471 ;
+    bfo:ratingsCount 1472 ;
     bfo:rawgId 326243 ;
     bfo:releaseDate "2022-02-25T00:00:00"^^xsd:dateTime ;
     bfo:slug "elden-ring" ;
@@ -8021,7 +8021,7 @@ The game features a Tower Defence aspect, as the planet's inhabitants set out to
     bfo:playtimeHours 20 ;
     bfo:publishedBy bfo:Wube_Software_Ltd ;
     bfo:rating 4.36 ;
-    bfo:ratingsCount 808 ;
+    bfo:ratingsCount 809 ;
     bfo:rawgId 10926 ;
     bfo:releaseDate "2020-08-14T00:00:00"^^xsd:dateTime ;
     bfo:slug "factorio" ;
@@ -8513,7 +8513,7 @@ The main emphasis is put on the road trip with your friends. FFXV features a mas
     bfo:playtimeHours 5 ;
     bfo:publishedBy bfo:Square_Enix ;
     bfo:rating 3.87 ;
-    bfo:ratingsCount 1426 ;
+    bfo:ratingsCount 1427 ;
     bfo:rawgId 750 ;
     bfo:releaseDate "2016-11-29T00:00:00"^^xsd:dateTime ;
     bfo:slug "final-fantasy-xv" ;
@@ -8646,8 +8646,8 @@ This is the tale of Clive Rosfield, a warrior granted the title “First Shield 
     bfo:officialWebsite "https://na.finalfantasyxvi.com/"^^xsd:anyURI ;
     bfo:playtimeHours 16 ;
     bfo:publishedBy bfo:Square_Enix ;
-    bfo:rating 4.11 ;
-    bfo:ratingsCount 174 ;
+    bfo:rating 4.1 ;
+    bfo:ratingsCount 175 ;
     bfo:rawgId 494382 ;
     bfo:releaseDate "2023-06-22T00:00:00"^^xsd:dateTime ;
     bfo:slug "final-fantasy-xvi" ;
@@ -8983,7 +8983,7 @@ There are some events players can be a part of.  For example, drifting competiti
     bfo:officialWebsite "https://forza.net/horizon"^^xsd:anyURI ;
     bfo:publishedBy bfo:Microsoft_Studios ;
     bfo:rating 4.37 ;
-    bfo:ratingsCount 607 ;
+    bfo:ratingsCount 608 ;
     bfo:rawgId 881 ;
     bfo:releaseDate "2016-09-27T00:00:00"^^xsd:dateTime ;
     bfo:slug "forza-horizon-3" ;
@@ -9534,7 +9534,7 @@ bfo:ghost_of_tsushima a bfo:VideoGame ;
     bfo:officialWebsite "https://www.suckerpunch.com/category/games/ghost-of-tsushima/"^^xsd:anyURI ;
     bfo:publishedBy bfo:Sony_Interactive_Entertainment ;
     bfo:rating 4.41 ;
-    bfo:ratingsCount 1149 ;
+    bfo:ratingsCount 1150 ;
     bfo:rawgId 58550 ;
     bfo:releaseDate "2020-07-17T00:00:00"^^xsd:dateTime ;
     bfo:slug "ghost-of-tsushima" ;
@@ -9608,7 +9608,7 @@ With an over the shoulder free camera that brings the player closer to the actio
     bfo:publishedBy bfo:Playstation_Pc_Llc,
         bfo:Sony_Interactive_Entertainment ;
     bfo:rating 4.54 ;
-    bfo:ratingsCount 5166 ;
+    bfo:ratingsCount 5168 ;
     bfo:rawgId 58175 ;
     bfo:releaseDate "2018-04-20T00:00:00"^^xsd:dateTime ;
     bfo:slug "god-of-war-2" ;
@@ -10491,7 +10491,7 @@ The rich, atmospheric presentation and unique melding of gameplay and narrative 
     bfo:playtimeHours 10 ;
     bfo:publishedBy bfo:Supergiant_Games ;
     bfo:rating 4.42 ;
-    bfo:ratingsCount 2096 ;
+    bfo:ratingsCount 2098 ;
     bfo:rawgId 274755 ;
     bfo:releaseDate "2020-09-17T00:00:00"^^xsd:dateTime ;
     bfo:slug "hades-2018" ;
@@ -10593,7 +10593,7 @@ A set of Source 2 tools for building new environments will ship with the game, e
     bfo:playtimeHours 5 ;
     bfo:publishedBy bfo:Valve ;
     bfo:rating 4.35 ;
-    bfo:ratingsCount 507 ;
+    bfo:ratingsCount 508 ;
     bfo:rawgId 392019 ;
     bfo:releaseDate "2020-03-23T00:00:00"^^xsd:dateTime ;
     bfo:slug "half-life-alyx" ;
@@ -11457,7 +11457,7 @@ The Protagonist uses a nail which serves as a replacement for a sword. Players c
     bfo:playtimeHours 7 ;
     bfo:publishedBy bfo:Team_Cherry ;
     bfo:rating 4.4 ;
-    bfo:ratingsCount 2744 ;
+    bfo:ratingsCount 2746 ;
     bfo:rawgId 9767 ;
     bfo:releaseDate "2017-02-23T00:00:00"^^xsd:dateTime ;
     bfo:slug "hollow-knight" ;
@@ -12197,7 +12197,7 @@ Embark on an unexpected and deeply disturbing odyssey""" ;
     bfo:playtimeHours 8 ;
     bfo:publishedBy bfo:Devolver_Digital ;
     bfo:rating 4.38 ;
-    bfo:ratingsCount 597 ;
+    bfo:ratingsCount 598 ;
     bfo:rawgId 479694 ;
     bfo:releaseDate "2021-10-19T00:00:00"^^xsd:dateTime ;
     bfo:slug "inscryption" ;
@@ -12265,7 +12265,7 @@ bfo:inside a bfo:VideoGame ;
     bfo:playtimeHours 4 ;
     bfo:publishedBy bfo:Playdead ;
     bfo:rating 4.39 ;
-    bfo:ratingsCount 2587 ;
+    bfo:ratingsCount 2588 ;
     bfo:rawgId 1450 ;
     bfo:releaseDate "2016-06-28T00:00:00"^^xsd:dateTime ;
     bfo:slug "inside" ;
@@ -12626,8 +12626,8 @@ It Takes Two further builds on Hazelight’s proven track record of making rich 
     bfo:officialWebsite "https://hazelight.se/games/it-takes-two/"^^xsd:anyURI ;
     bfo:playtimeHours 10 ;
     bfo:publishedBy bfo:Electronic_Arts ;
-    bfo:rating 4.47 ;
-    bfo:ratingsCount 1731 ;
+    bfo:rating 4.46 ;
+    bfo:ratingsCount 1732 ;
     bfo:rawgId 455597 ;
     bfo:releaseDate "2021-03-26T00:00:00"^^xsd:dateTime ;
     bfo:slug "it-takes-two-2" ;
@@ -12850,7 +12850,7 @@ A rich story filled with unique characters, all tied into the gameplay and level
     bfo:publishedBy bfo:Adult_Swim_Games,
         bfo:Devolver_Digital ;
     bfo:rating 4.39 ;
-    bfo:ratingsCount 1148 ;
+    bfo:ratingsCount 1149 ;
     bfo:rawgId 13856 ;
     bfo:releaseDate "2019-04-17T00:00:00"^^xsd:dateTime ;
     bfo:slug "katana-zero" ;
@@ -13056,8 +13056,8 @@ The ship's behavior is based on the real physics of such phenomena, the ship beh
     bfo:playtimeHours 5 ;
     bfo:publishedBy bfo:Private_Division,
         bfo:Squad ;
-    bfo:rating 4.15 ;
-    bfo:ratingsCount 409 ;
+    bfo:rating 4.16 ;
+    bfo:ratingsCount 410 ;
     bfo:rawgId 2213 ;
     bfo:releaseDate "2015-04-26T00:00:00"^^xsd:dateTime ;
     bfo:slug "kerbal-space-program" ;
@@ -14445,7 +14445,7 @@ As the player progresses, he or she unlocks new suits that grant Spider-Man new 
     bfo:playtimeHours 6 ;
     bfo:publishedBy bfo:Sony_Interactive_Entertainment ;
     bfo:rating 4.45 ;
-    bfo:ratingsCount 3723 ;
+    bfo:ratingsCount 3724 ;
     bfo:rawgId 58134 ;
     bfo:releaseDate "2018-09-07T00:00:00"^^xsd:dateTime ;
     bfo:slug "marvels-spider-man" ;
@@ -14501,7 +14501,7 @@ bfo:marvels_spider_man_miles_morales a bfo:VideoGame ;
     bfo:publishedBy bfo:Playstation_Pc_Llc,
         bfo:Sony_Interactive_Entertainment ;
     bfo:rating 4.25 ;
-    bfo:ratingsCount 953 ;
+    bfo:ratingsCount 954 ;
     bfo:rawgId 452634 ;
     bfo:releaseDate "2020-11-12T00:00:00"^^xsd:dateTime ;
     bfo:slug "marvels-spider-man-miles-morales" ;
@@ -15163,8 +15163,8 @@ Hunt solo or in a party with friends to earn rewards that you can use to craft a
     bfo:officialWebsite "https://www.monsterhunter.com/rise/us/"^^xsd:anyURI ;
     bfo:playtimeHours 15 ;
     bfo:publishedBy bfo:Capcom ;
-    bfo:rating 4.21 ;
-    bfo:ratingsCount 179 ;
+    bfo:rating 4.19 ;
+    bfo:ratingsCount 180 ;
     bfo:rawgId 494393 ;
     bfo:releaseDate "2021-03-26T00:00:00"^^xsd:dateTime ;
     bfo:slug "monster-hunter-rise" ;
@@ -15234,7 +15234,7 @@ The hunter, accompanied by an assistant, starts at the city of Astera, from wher
     bfo:playtimeHours 15 ;
     bfo:publishedBy bfo:Capcom ;
     bfo:rating 4.01 ;
-    bfo:ratingsCount 1630 ;
+    bfo:ratingsCount 1631 ;
     bfo:rawgId 46889 ;
     bfo:releaseDate "2018-01-26T00:00:00"^^xsd:dateTime ;
     bfo:slug "monster-hunter-world-2" ;
@@ -15271,7 +15271,7 @@ All 14 weapon types have new moves and combos. Each weapon has more unique actio
     bfo:officialWebsite "https://www.monsterhunter.com/world-iceborne/us/"^^xsd:anyURI ;
     bfo:publishedBy bfo:Capcom ;
     bfo:rating 4.46 ;
-    bfo:ratingsCount 166 ;
+    bfo:ratingsCount 167 ;
     bfo:rawgId 366889 ;
     bfo:releaseDate "2019-09-06T00:00:00"^^xsd:dateTime ;
     bfo:slug "monster-hunter-world-iceborne" ;
@@ -16587,7 +16587,7 @@ Much like the previous title which garnered much praise from fans and critics al
     bfo:playtimeHours 14 ;
     bfo:publishedBy bfo:Koei_Tecmo_Games ;
     bfo:rating 4.09 ;
-    bfo:ratingsCount 82 ;
+    bfo:ratingsCount 83 ;
     bfo:rawgId 518596 ;
     bfo:releaseDate "2021-02-05T00:00:00"^^xsd:dateTime ;
     bfo:slug "nioh-2-the-complete-edition" ;
@@ -17162,7 +17162,7 @@ Playing in the Ori and the blind forest, you have to explore a vast world, to so
     bfo:playtimeHours 6 ;
     bfo:publishedBy bfo:Microsoft_Studios ;
     bfo:rating 4.38 ;
-    bfo:ratingsCount 1530 ;
+    bfo:ratingsCount 1531 ;
     bfo:rawgId 19590 ;
     bfo:releaseDate "2015-03-10T00:00:00"^^xsd:dateTime ;
     bfo:slug "ori-and-the-blind-forest" ;
@@ -17307,7 +17307,7 @@ Face large epic bosses and seek support from discoverable allies who will provid
     bfo:publishedBy bfo:Microsoft_Studios,
         bfo:Xbox_Game_Studios ;
     bfo:rating 4.41 ;
-    bfo:ratingsCount 1311 ;
+    bfo:ratingsCount 1312 ;
     bfo:rawgId 28199 ;
     bfo:releaseDate "2020-03-10T00:00:00"^^xsd:dateTime ;
     bfo:slug "ori-and-the-will-of-the-wisps" ;
@@ -18050,7 +18050,7 @@ A gift of tremendous power has been given to you, and you must choose where this
     bfo:publishedBy bfo:Meta_Publishing,
         bfo:Owlcat_Games ;
     bfo:rating 4.25 ;
-    bfo:ratingsCount 138 ;
+    bfo:ratingsCount 139 ;
     bfo:rawgId 409575 ;
     bfo:releaseDate "2021-09-02T00:00:00"^^xsd:dateTime ;
     bfo:slug "pathfinder-wrath-of-the-righteous" ;
@@ -18085,7 +18085,7 @@ The world of Persona consists of two parts. One is the modern Tokyo, in which th
         bfo:Buka_Entertainment,
         bfo:Deep_Silver ;
     bfo:rating 4.34 ;
-    bfo:ratingsCount 1442 ;
+    bfo:ratingsCount 1443 ;
     bfo:rawgId 49 ;
     bfo:releaseDate "2016-09-15T00:00:00"^^xsd:dateTime ;
     bfo:slug "persona-5" ;
@@ -19873,7 +19873,7 @@ From the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemp
     bfo:playtimeHours 21 ;
     bfo:publishedBy bfo:Rockstar_Games ;
     bfo:rating 4.59 ;
-    bfo:ratingsCount 5513 ;
+    bfo:ratingsCount 5514 ;
     bfo:rawgId 28 ;
     bfo:releaseDate "2018-10-26T00:00:00"^^xsd:dateTime ;
     bfo:slug "red-dead-redemption-2" ;
@@ -20137,7 +20137,7 @@ Resident Evil 7: Biohazard can also be played with virtual reality setup and it�
     bfo:playtimeHours 10 ;
     bfo:publishedBy bfo:Capcom ;
     bfo:rating 4.33 ;
-    bfo:ratingsCount 1990 ;
+    bfo:ratingsCount 1991 ;
     bfo:rawgId 480 ;
     bfo:releaseDate "2017-01-23T00:00:00"^^xsd:dateTime ;
     bfo:slug "resident-evil-7-biohazard" ;
@@ -20269,7 +20269,7 @@ Set a few years after the horrifying events in the critically acclaimed Resident
     bfo:playtimeHours 15 ;
     bfo:publishedBy bfo:Capcom ;
     bfo:rating 4.39 ;
-    bfo:ratingsCount 1054 ;
+    bfo:ratingsCount 1055 ;
     bfo:rawgId 452649 ;
     bfo:releaseDate "2021-05-07T00:00:00"^^xsd:dateTime ;
     bfo:slug "resident-evil-village" ;
@@ -21489,7 +21489,7 @@ The player controls Sekiro from the third person view and navigates the characte
         bfo:Fang_Kuai_You_Xi,
         bfo:Fromsoftware ;
     bfo:rating 4.38 ;
-    bfo:ratingsCount 2124 ;
+    bfo:ratingsCount 2125 ;
     bfo:rawgId 50734 ;
     bfo:releaseDate "2019-03-22T00:00:00"^^xsd:dateTime ;
     bfo:slug "shadows-die-twice" ;
@@ -22023,7 +22023,7 @@ In contrast to other MOBA's, there are multiple game modes in Smite. The main di
     bfo:playtimeHours 3 ;
     bfo:publishedBy bfo:Hi_Rez_Studios ;
     bfo:rating 3.05 ;
-    bfo:ratingsCount 801 ;
+    bfo:ratingsCount 802 ;
     bfo:rawgId 752 ;
     bfo:releaseDate "2015-08-19T00:00:00"^^xsd:dateTime ;
     bfo:slug "smite" ;
@@ -22911,7 +22911,7 @@ The hero has many different activities: plant and care for plants, raise livesto
     bfo:publishedBy bfo:Chucklefish,
         bfo:Concernedape ;
     bfo:rating 4.39 ;
-    bfo:ratingsCount 2467 ;
+    bfo:ratingsCount 2468 ;
     bfo:rawgId 654 ;
     bfo:releaseDate "2016-02-25T00:00:00"^^xsd:dateTime ;
     bfo:slug "stardew-valley" ;
@@ -23675,7 +23675,7 @@ The gameplay of Super Mario Odyssey draws inspiration from Super Mario 64 and Su
     bfo:officialWebsite "https://www.nintendo.com/games/detail/super-mario-odyssey-switch"^^xsd:anyURI ;
     bfo:publishedBy bfo:Nintendo ;
     bfo:rating 4.42 ;
-    bfo:ratingsCount 1930 ;
+    bfo:ratingsCount 1931 ;
     bfo:rawgId 28026 ;
     bfo:releaseDate "2017-10-27T00:00:00"^^xsd:dateTime ;
     bfo:slug "super-mario-odyssey" ;
@@ -25209,7 +25209,7 @@ Unlike in the original game, the player controls Ellie instead of Joel, who now 
     bfo:officialWebsite "https://www.thelastofus.playstation.com/"^^xsd:anyURI ;
     bfo:publishedBy bfo:Sony_Interactive_Entertainment ;
     bfo:rating 4.42 ;
-    bfo:ratingsCount 2011 ;
+    bfo:ratingsCount 2013 ;
     bfo:rawgId 51325 ;
     bfo:releaseDate "2020-06-19T00:00:00"^^xsd:dateTime ;
     bfo:slug "the-last-of-us-part-2" ;
@@ -25239,7 +25239,7 @@ In contrast to the previous titles in the series, Breath of the Wild the player 
     bfo:playtimeHours 121 ;
     bfo:publishedBy bfo:Nintendo ;
     bfo:rating 4.47 ;
-    bfo:ratingsCount 3195 ;
+    bfo:ratingsCount 3196 ;
     bfo:rawgId 22511 ;
     bfo:releaseDate "2017-03-03T00:00:00"^^xsd:dateTime ;
     bfo:slug "the-legend-of-zelda-breath-of-the-wild" ;
@@ -25263,7 +25263,7 @@ bfo:the_legend_of_zelda_breath_of_the_wild_sequel a bfo:VideoGame ;
     bfo:metacriticScore 96 ;
     bfo:publishedBy bfo:Nintendo ;
     bfo:rating 4.36 ;
-    bfo:ratingsCount 491 ;
+    bfo:ratingsCount 492 ;
     bfo:rawgId 327239 ;
     bfo:releaseDate "2023-05-12T00:00:00"^^xsd:dateTime ;
     bfo:slug "the-legend-of-zelda-breath-of-the-wild-sequel" ;
@@ -26147,7 +26147,7 @@ Players praise the game for its atmosphere and a wide open world that finds the 
     bfo:playtimeHours 43 ;
     bfo:publishedBy bfo:Cd_Projekt_Red ;
     bfo:rating 4.64 ;
-    bfo:ratingsCount 7224 ;
+    bfo:ratingsCount 7226 ;
     bfo:rawgId 3328 ;
     bfo:releaseDate "2015-05-18T00:00:00"^^xsd:dateTime ;
     bfo:slug "the-witcher-3-wild-hunt" ;
@@ -27604,7 +27604,7 @@ Now changing the game's concept, Naughty Dog made locations much bigger and more
     bfo:officialWebsite "https://www.unchartedthegame.com/en-us/games/uncharted-4/"^^xsd:anyURI ;
     bfo:publishedBy bfo:Sony_Computer_Entertainment ;
     bfo:rating 4.48 ;
-    bfo:ratingsCount 3745 ;
+    bfo:ratingsCount 3746 ;
     bfo:rawgId 2462 ;
     bfo:releaseDate "2016-05-10T00:00:00"^^xsd:dateTime ;
     bfo:slug "uncharted-4-a-thiefs-end" ;
@@ -28643,7 +28643,7 @@ In addition to following Edith, the game has something to inspect, search, disco
     bfo:playtimeHours 3 ;
     bfo:publishedBy bfo:Annapurna_Interactive ;
     bfo:rating 4.38 ;
-    bfo:ratingsCount 2039 ;
+    bfo:ratingsCount 2040 ;
     bfo:rawgId 42 ;
     bfo:releaseDate "2017-04-23T00:00:00"^^xsd:dateTime ;
     bfo:slug "what-remains-of-edith-finch" ;
@@ -29213,7 +29213,7 @@ Yakuza 0 is a prequel of Yakuza, video game series first released in 2005. The o
     bfo:playtimeHours 8 ;
     bfo:publishedBy bfo:Sega_2 ;
     bfo:rating 4.36 ;
-    bfo:ratingsCount 1144 ;
+    bfo:ratingsCount 1145 ;
     bfo:rawgId 492 ;
     bfo:releaseDate "2015-03-12T00:00:00"^^xsd:dateTime ;
     bfo:slug "yakuza-0" ;
@@ -29795,4 +29795,3 @@ Destructible Environments: In times of a zombie apocalypse, humans love to take 
     bfo:releaseDate "2016-07-19T00:00:00"^^xsd:dateTime ;
     bfo:slug "zombie-night-terror" ;
     bfo:title "Zombie Night Terror" .
-
