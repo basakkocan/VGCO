@@ -35,7 +35,7 @@ while url and count < 500:
         if count >= 500:
             break
         if game["id"] in existing_ids:
-            continue  # zaten var, atla
+            continue  
             
         detail = get(f"/games/{game['id']}")
         game["description_raw"] = detail.get("description_raw", "")
