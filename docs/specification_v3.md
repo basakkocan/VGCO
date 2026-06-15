@@ -59,6 +59,7 @@ The functional requirements are formulated as Competency Questions (CQs) that th
 * **CQ7**: Which developers have published/developed games on multiple platforms?
 * **CQ8**: Which digital stores sell a specific game?
 * **CQ9**: What is the Metacritic score or average user rating of a given game?
+* **CQ10**: What is the average playtime in hours for a given game?
 * **CQ10**: Which games belong to a specific game series or franchise?
 * **CQ11**: What screenshots or trailers are available for a given game?
 
