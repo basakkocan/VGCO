@@ -1,5 +1,7 @@
 import requests, time, json, os
-
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+    
 API_KEY = "d497ff2ef2264be29ddb2351235d1f8f"
 BASE    = "https://api.rawg.io/api"
 
@@ -9,7 +11,6 @@ def get(endpoint, params={}):
     r.raise_for_status()
     return r.json()
 
-# Mevcut oyunların id'lerini oku (zaten çekilmişleri atla)
 existing_ids = set()
 if os.path.exists("games.jsonl"):
     with open("games.jsonl", encoding="utf-8") as f:
@@ -18,7 +19,7 @@ if os.path.exists("games.jsonl"):
             existing_ids.add(d["id"])
     print(f"Mevcut: {len(existing_ids)} oyun zaten var, devam ediliyor...")
 
-games_out = open("games.jsonl", "a", encoding="utf-8")  # append modu
+games_out = open("games.jsonl", "a", encoding="utf-8")  
 params = {
     "metacritic": "80,100",
     "dates": "2015-01-01,2025-12-31",
